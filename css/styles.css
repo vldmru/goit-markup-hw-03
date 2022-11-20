@@ -41,13 +41,10 @@ body {
   background-color: var(--main-background);
   color: var(--main-text);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.14;
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -55,7 +52,6 @@ body {
 }
 
 .section-head {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -65,16 +61,13 @@ body {
   text-decoration: none;
 }
 
-a {
-  font-style: normal;
-}
-
 .header-menu,
 .advantage-list,
 .examples-list,
 .team-list,
 .filter,
-.projects-list {
+.projects-list,
+.footer-list {
   list-style: none;
 }
 
@@ -94,7 +87,7 @@ a {
 
 /* Header block styles */
 .header {
-  border-bottom: 1px solid var(--descripting-text);
+  border-bottom: 1px solid #ececec;
 }
 
 .header-block {
@@ -110,8 +103,12 @@ a {
 
 .header-logotype {
   margin-right: 97px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .header-logotype,
@@ -154,8 +151,13 @@ a {
 
 .header-contact {
   color: var(--descripting-text);
+  font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .header-contact:first-child {
@@ -181,6 +183,7 @@ a {
   color: var(--main-background);
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-container {
@@ -193,7 +196,7 @@ a {
   justify-content: center;
   text-align: center;
   max-width: 700px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -202,10 +205,6 @@ a {
 }
 
 .hero-button {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
   border: var(--links-hower);
   border-radius: 4px;
   padding: 10px 20px;
@@ -231,8 +230,12 @@ a {
 .advantage-header {
   margin-bottom: 9px;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: inherit;
+
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .advantage-description {
@@ -240,6 +243,7 @@ a {
   max-height: 71px;
   color: var(--descripting-text);
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .advantage-item:not(:last-child) {
@@ -280,13 +284,17 @@ a {
   display: flex;
 }
 
-.team-photo {
-  margin-bottom: 30px;
+.biography-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-biography {
   background-color: var(--main-background);
-  padding-bottom: 30px;
+  border: 0px 3px 3px 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-biography:not(:last-child) {
@@ -298,6 +306,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -305,6 +314,7 @@ a {
   color: var(--descripting-text);
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -324,21 +334,30 @@ footer {
   margin-bottom: 9px;
 }
 
+.footer-list {
+  max-width: 231px;
+}
+
 .footer-address {
-  max-width: 240px;
+  font-style: normal;
 }
 
 .footer-location {
   color: var(--main-background);
+  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .footer-contacts {
   display: block;
   color: var(--contact_text);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.footer-contacts:not(:last-child) {
+.footer-item:nth-child(2) {
   margin-bottom: 2px;
 }
 
@@ -350,6 +369,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   /* 1.63 fact */
   text-align: center;
 }
@@ -395,18 +415,17 @@ footer {
 }
 
 .projects-item {
-  width: calc((100% - 2 * 30) / 3);
-  padding-bottom: 20px;
-  border: 1px solid #eeeeee;
+  width: calc((100% - 2 * 30px) / 3);
 }
 
-.projects-photo {
-  margin-bottom: 20px;
+.description-block {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-head {
-  padding-left: 24px;
-  padding-right: 24px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -416,9 +435,8 @@ footer {
 }
 
 .portfolio-description {
-  padding-left: 24px;
-  padding-right: 24px;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--descripting-text);
 }
