@@ -68,7 +68,8 @@ body {
 .team-list,
 .filter,
 .projects-list,
-.footer-list {
+.footer-list,
+.contact-list {
   list-style: none;
 }
 
@@ -154,7 +155,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 1.19;
   letter-spacing: 0.02em;
 }
 
@@ -172,6 +173,10 @@ body {
 
 .contact-list {
   display: flex;
+}
+
+.contact-item {
+  display: inline-block;
 }
 
 .contact-item:first-child {
@@ -232,7 +237,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero-button:active,
+.hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
 }
@@ -261,6 +266,10 @@ body {
   color: var(--descripting-text);
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.advantage-item {
+  max-width: 270px;
 }
 
 .advantage-item:not(:last-child) {
